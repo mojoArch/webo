@@ -1,4 +1,4 @@
-const name = document.querySelector(".hero-name");
+const name = document.querySelector(".hero-name, .hero-title");
 window.addEventListener("scroll", function () {
     const scroll = window.scrollY;
 

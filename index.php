@@ -11,14 +11,15 @@
 
         <div class="hero-title">
         SOFTWARE DEVELOPER
-            PHOTOGRAPHER
+            
         </div>
 
         <div class="hero-description">
-     I build websites, applications and digital experiences.
+     Custom Websites | Databases | Backend | Hardware
         </div>
 
     </section>
+<script src="js/script.js"></script>
 
 </main>
 

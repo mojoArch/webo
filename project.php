@@ -4,9 +4,13 @@
     <section>
         <h1>My Projects</h1>
          
-        <div class="projecten-kaart">
-            <h2> </h2>
-            <p>een juristen website die ik heb gebouwd</p>
+        <div class="projecten-nummer-een">
+            <h2>Project 1</h2>
+            <p>juristen Websites</p>
+            
+        </div>
+        <div class="projecten-nummer-twee">
+            <h2>Project 2</h2>
             
         </div>
     </section>

@@ -67,9 +67,9 @@ font-size: clamp(40px, 5vw, 70px);
     color: #aaa;
     margin-bottom: 10px;
 }
-    
+
 .hero {
-height: 80vw;
+height: 60vw;
 padding-top: 30vh;
 overflow: hidden;
 }
@@ -87,4 +87,35 @@ overflow: hidden;
     max-width: 600px;
     margin: 30px auto ;
     font-size: 2vw;
+}
+.project-section{
+    height: 100vh;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    padding: 50px;
+        text-align: center;
+}
+.projects-title{
+    font-size: 8vw;
+    margin: 0;
+}
+.project-container{
+    position: relative;
+    height: 60vh;
+}
+.project{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70%; 
+    
+}
+.project h3{
+    font-size: 6vw;
+    margin: 0;
+}
+.project span{
+    font-size: 20px;
 }

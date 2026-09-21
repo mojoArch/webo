@@ -25,16 +25,26 @@
         <div class="projects-container">
 
        
-     <article class="project-project-1">
+     <article class="project">
+        <div class="project-image">
+            <img src="./images/image.jpg" alt="">
+        </div>  
+      <div class="project-info">
         <span>01</span>
-        <h3>cyberdeck</h3>
-        <p>hardware</p>
+        <h3>CYBERDECK</h3>
+        <p>HARDWARE</p>
+        </div>
     </article>
 
-    <article class="project-project-2">
+    <article class="project">
+         <div class="project-image">
+            <img src="./images/image.jpg" alt="">
+         </div>
+        <div class="project-info">
         <span>02</span>
-        <h3>JURISTEN</h3>
-        <p>Websites</p>
+        <h3>LAWYERS</h3>
+        <p>WEBSITE</p>
+        </div>
     </article>
 
         <a href="/project.php" class="all-projects-button">

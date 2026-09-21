@@ -1,18 +1,36 @@
 <?php require 'header.php' ; ?>
 
 <main>
-    <section>
-        <h1>My Projects</h1>
-         
-        <div class="projecten-nummer-een">
-            <h2>Project 1</h2>
-            <p>juristen Websites</p>
-            
+       <section id="projects" class="projects-section">
+        <h2 class="projects-title">PROJECTS</h2>
+        <div class="projects-container">
+
+       
+     <article class="project">
+        <div class="project-image">
+            <img src="./images/image.jpg" alt="">
+        </div>  
+      <div class="project-info">
+        <span>01</span>
+        <h3>CYBERDECK</h3>
+        <p>HARDWARE</p>
         </div>
-        <div class="projecten-nummer-twee">
-            <h2>Project 2</h2>
-            
+    </article>
+
+    <article class="project">
+         <div class="project-image">
+            <img src="./images/image.jpg" alt="">
+         </div>
+        <div class="project-info">
+        <span>02</span>
+        <h3>LAWYER</h3>
+        <p>WEBSITE</p>
         </div>
+    </article>
+
+
+
+   </div>
     </section>
 </main>
 

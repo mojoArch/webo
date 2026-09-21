@@ -38,11 +38,11 @@
 
     <article class="project">
          <div class="project-image">
-            <img src="./images/image.jpg" alt="">
+            <img src="./images/justitie.jpg" alt="">
          </div>
         <div class="project-info">
         <span>02</span>
-        <h3>LAWYERS</h3>
+        <h3>LAWYER</h3>
         <p>WEBSITE</p>
         </div>
     </article>
@@ -55,10 +55,31 @@
     </section>
 
     <section id="about" class="about-section">
+        <div class="about-box">
+
         <h2>ABOUT ME</h2>
+
+        <p>
+            I'm a software developer focused on building creative applications.
+        </p>
+
+        <p>
+            I enjoy working with backend development, databases
+            and hardware.
+        </p>
+
+    </div>
     </section>
     <section id="contact" class="contact-section">
-        <h2>CONTACT</h2>
+        <div class="contact-box">
+            <h1>CONTACT</h1>
+            <p>INTERESSED? GET IN TOUCH</p>
+            <div class="contact-links">
+                <a href="mailto:n.eroglux014@gmail.com">EMAIL
+                </a>
+                <a href="https://linkedin.com/in/nazli-eroglu-191baa370" target="_blank">LINKEDIN</a>
+            </div>
+        </div>
     </section>
 
 </main>

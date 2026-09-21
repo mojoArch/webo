@@ -165,3 +165,79 @@ overflow: hidden;
     font-weight: 700;
     text-decoration: none;
 }
+.about-section {
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 3rem;
+}
+
+.about-box {
+    width: 100%;
+    max-width: 800px;
+
+    padding: 4rem;
+
+    border: 2px solid white;
+
+    text-align: center;
+}
+
+.about-box h2 {
+    font-size: 4rem;
+    margin-bottom: 2rem;
+}
+
+.about-box p {
+    font-size: 1.2rem;
+    line-height: 1.7;
+    margin-bottom: 1rem;
+}
+.contact-section {
+    min-height: calc(100vh - 80px);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 3rem;
+}
+
+.contact-box {
+    width: 100%;
+    max-width: 800px;
+
+    padding: 4rem;
+
+    border: 2px solid white;
+
+    text-align: center;
+}
+
+.contact-box h1 {
+    font-size: 4rem;
+    margin-bottom: 1.5rem;
+}
+
+.contact-box p {
+    font-size: 1.2rem;
+    margin-bottom: 2.5rem;
+}
+
+.contact-links {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.contact-links a {
+    padding: 1rem 2rem;
+
+    border: 2px solid white;
+
+    color: white;
+    font-weight: 700;
+}

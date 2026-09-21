@@ -19,7 +19,7 @@
 
     <article class="project">
          <div class="project-image">
-            <img src="./images/image.jpg" alt="">
+            <img src="./images/justitie.jpg" alt="">
          </div>
         <div class="project-info">
         <span>02</span>
@@ -33,5 +33,7 @@
    </div>
     </section>
 </main>
+
+<?php require 'footer.php'; ?>
 
 

@@ -27,8 +27,8 @@
        
      <article class="project-project-1">
         <span>01</span>
-        <h3>MOJO</h3>
-        <p>Pianoshop</p>
+        <h3>cyberdeck</h3>
+        <p>hardware</p>
     </article>
 
     <article class="project-project-2">
@@ -37,18 +37,20 @@
         <p>Websites</p>
     </article>
 
-    <article class="project-project-3">
-        <span>03</span>
-        <h3>cyberdeck</h3>
-        <p>Hardware</p>
-    </article>
+        <a href="/project.php" class="all-projects-button">
+            VIEW ALL PROJECTS
+        </a>
 
    </div>
-   
+    </section>
+
+    <section id="about" class="about-section">
+        <h2>ABOUT ME</h2>
+    </section>
+    <section id="contact" class="contact-section">
+        <h2>CONTACT</h2>
     </section>
 
 </main>
-
-<script src="./js/script.js"></script>
 
 <?php require 'footer.php' ; ?>

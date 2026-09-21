@@ -18,7 +18,7 @@
 
         <div class="nav-links">
             <a href="/#home">Home</a>
-            <a href="./about.php">About</a>
+            <a href="/#about">About</a>
             <a href="./project.php">Projects</a>
             <a href="/#contact">Contact</a>
         </div>

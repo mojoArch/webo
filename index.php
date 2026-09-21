@@ -1,5 +1,5 @@
 
-<?php require 'header.php' ; require 'footer.php' ; ?>
+<?php require 'header.php' ;?>
 
 
 <main>
@@ -20,24 +20,24 @@
     </section>
 
 
-    <section class="projects-section">
+    <section id="projects" class="projects-section">
         <h2 class="projects-title">PROJECTS</h2>
         <div class="projects-container">
 
        
-     <article class="project-project1">
+     <article class="project-project-1">
         <span>01</span>
         <h3>MOJO</h3>
         <p>Pianoshop</p>
     </article>
 
-    <article class="project-project2">
+    <article class="project-project-2">
         <span>02</span>
         <h3>JURISTEN</h3>
         <p>Websites</p>
     </article>
 
-    <article class="project-project3">
+    <article class="project-project-3">
         <span>03</span>
         <h3>cyberdeck</h3>
         <p>Hardware</p>

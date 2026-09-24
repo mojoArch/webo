@@ -42,56 +42,96 @@ projects.forEach((project) => {
     });
 });
 
- gsap.registerPlugin(ScrollTrigger);
+  gsap.registerPlugin(ScrollTrigger);
 
-  const aboutSection = document.querySelector(".about-section");
-  const statement = document.querySelector(".about-statement");
+  const aboutStage = document.querySelector(".about-stage");
+  const aboutStatement = document.querySelector(".about-statement");
 
-  if (aboutSection && statement) {
-      const text = statement.textContent.trim();
-
-      // Houd de volledige zin leesbaar voor screenreaders.
-      statement.setAttribute("aria-label", text);
-      statement.replaceChildren();
-
-      // Maak losse letters, maar houd woorden bij elkaar.
-      text.split(/\s+/).forEach((word, index) => {
-          if (index > 0) {
-              statement.append(document.createTextNode(" "));
-          }
-
-          const wordSpan = document.createElement("span");
-          wordSpan.className = "about-word";
-          wordSpan.setAttribute("aria-hidden", "true");
-
-          Array.from(word).forEach((letter) => {
-              const letterSpan = document.createElement("span");
-              letterSpan.className = "about-letter";
-              letterSpan.textContent = letter;
-              wordSpan.append(letterSpan);
-          });
-
-          statement.append(wordSpan);
-      });
-
+  if (aboutStage && aboutStatement) {
+      const originalText = aboutStatement.textContent.trim();
       const media = gsap.matchMedia();
 
       media.add("(prefers-reduced-motion: no-preference)", () => {
-          gsap.from(statement.querySelectorAll(".about-letter"), {
-              x: () => aboutSection.clientWidth,
-              opacity: 0,
-              duration: 1,
-              stagger: 0.06,
-              ease: "none",
+          aboutStage.classList.add("is-animated");
 
-              scrollTrigger: {
-                  trigger: aboutSection,
-                  start: "top 85%",
-                  end: "top 10%",
-                  scrub: 1,
-                  invalidateOnRefresh: true
+          aboutStatement.setAttribute("aria-label", originalText);
+          aboutStatement.replaceChildren();
+
+          // Elke letter krijgt een vaste plek met een beweegbare letter erin.
+          Array.from(originalText).forEach((character) => {
+              const slot = document.createElement("span");
+              slot.setAttribute("aria-hidden", "true");
+
+              if (character === " ") {
+                  slot.className = "about-space";
+                  slot.textContent = "\u00A0";
+              } else {
+                  slot.className = "about-char";
+
+                  const letter = document.createElement("span");
+                  letter.className = "about-letter";
+                  letter.textContent = character;
+
+                  slot.append(letter);
               }
+
+              aboutStatement.append(slot);
           });
+
+          const distance = () =>
+              aboutStatement.scrollWidth - aboutStage.clientWidth;
+
+          // De sectie blijft staan terwijl de zin voorbij schuift.
+          const horizontalScroll = gsap.fromTo(
+              aboutStatement,
+              { x: 0 },
+              {
+                  x: () => -distance(),
+                  ease: "none",
+
+                  scrollTrigger: {
+                      trigger: aboutStage,
+                      start: "top top",
+                      end: () => `+=${distance()}`,
+                      pin: true,
+                      scrub: 1,
+                      invalidateOnRefresh: true
+                  }
+              }
+          );
+
+          // Letters bewegen afzonderlijk terwijl ze door beeld schuiven.
+          aboutStatement.querySelectorAll(".about-char").forEach((slot, index) => {
+              const letter = slot.querySelector(".about-letter");
+
+              gsap.fromTo(
+                  letter,
+                  {
+                      yPercent: index % 2 === 0 ? -110 : 110,
+                      rotation: index % 3 === 0 ? -22 : 18
+                  },
+                  {
+                      yPercent: 0,
+                      rotation: 0,
+                      ease: "elastic.out(1, 0.65)",
+
+                      scrollTrigger: {
+                          trigger: slot,
+                          containerAnimation: horizontalScroll,
+                          start: "left 100%",
+                          end: "left 35%",
+                          scrub: 0.5
+                      }
+                  }
+              );
+          });
+
+          // Herstel gewone tekst als minder beweging wordt ingeschakeld.
+          return () => {
+              aboutStage.classList.remove("is-animated");
+              aboutStatement.textContent = originalText;
+              aboutStatement.removeAttribute("aria-label");
+          };
       });
   }
 const contactButtons = document.querySelectorAll(".contact-links a");

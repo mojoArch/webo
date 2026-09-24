@@ -166,36 +166,48 @@ overflow: hidden;
     text-decoration: none;
 }
 .about-section {
-    min-height: 100vh;
+      min-height: 100vh;
+      min-height: 100svh;
+      display: flex;
+      align-items: center;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
+      padding: 6rem 1.5rem;
+      overflow: hidden;
+  }
 
-    padding: 3rem;
-}
+  .about-content {
+      width: 100%;
+      max-width: 1100px;
+      margin: 0 auto;
+  }
 
-.about-box {
-    width: 100%;
-    max-width: 800px;
+  .about-label {
+      font-size: 0.9rem;
+      letter-spacing: 0.2em;
+      color: #aaa;
+      margin-bottom: 2rem;
+  }
 
-    padding: 4rem;
+  .about-statement {
+      font-size: clamp(1.25rem, 5.5vw, 4.5rem);
+      font-weight: 700;
+      line-height: 1.15;
+      letter-spacing: -0.04em;
+  }
 
-    border: 2px solid white;
+  .about-line {
+      display: block;
+  }
 
-    text-align: center;
-}
+  .about-description {
+      max-width: 550px;
+      margin-top: 2.5rem;
 
-.about-box h2 {
-    font-size: 4rem;
-    margin-bottom: 2rem;
-}
-
-.about-box p {
-    font-size: 1.2rem;
-    line-height: 1.7;
-    margin-bottom: 1rem;
-}
+      font-size: clamp(1rem, 1.5vw, 1.2rem);
+      font-weight: 400;
+      line-height: 1.7;
+      color: #aaa;
+  }
 .contact-section {
     min-height: calc(100vh - 80px);
 

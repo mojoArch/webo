@@ -42,15 +42,32 @@ projects.forEach((project) => {
     });
 });
 
-const timeline = gsap.timeline({
-    scrollTrigger: {
-        trigger: ".projects-section",
-        start: "top top",
-        end: "+=2000",
-        pin: true,
-        scrub: 1,
-    }
-});
+  gsap.registerPlugin(ScrollTrigger);
+
+  const aboutSection = document.querySelector(".about-section");
+
+  if (aboutSection) {
+      const media = gsap.matchMedia();
+
+      media.add("(prefers-reduced-motion: no-preference)", () => {
+          const lines = aboutSection.querySelectorAll(".about-line");
+
+          gsap.from(lines, {
+              x: () => -aboutSection.clientWidth,
+              opacity: 0,
+              stagger: 0.15,
+              ease: "none",
+
+              scrollTrigger: {
+                  trigger: aboutSection,
+                  start: "top 85%",
+                  end: "top 15%",
+                  scrub: 1,
+                  invalidateOnRefresh: true
+              }
+          });
+      });
+  }
 const contactButtons = document.querySelectorAll(".contact-links a");
 
 contactButtons.forEach((button) => {

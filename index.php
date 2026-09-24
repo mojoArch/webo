@@ -4,7 +4,7 @@
 
 <main>
 
-    <section class="hero">
+    <section id="home" class="hero">
         <div class="hero-name">
             NAZLI 
         </div>
@@ -18,6 +18,24 @@
      Custom Websites | Databases | Backend | Hardware
         </div>
     </section>
+
+     <section id="about" class="about-section">
+      <div class="about-content">
+          <h2 class="about-label">ABOUT ME</h2>
+
+          <p class="about-statement">
+              <span class="about-line">I CREATE EXPERIENCES</span>
+              <span class="about-line">AT THE INTERSECTION</span>
+              <span class="about-line">OF DESIGN AND CODE.</span>
+          </p>
+
+          <p class="about-description">
+              I'm a software developer focused on building creative
+              applications. I enjoy working with backend development,
+              databases and hardware.
+          </p>
+      </div>
+  </section>
 
 
     <section id="projects" class="projects-section">
@@ -54,19 +72,7 @@
    </div>
     </section>
 
-    <section id="about" class="about-section">
-        <div class="about-box">
 
-        <h2>ABOUT ME</h2>
-
-        <p>
-            I'm a software developer focused on building creative applications.
-        </p>
-
-        <p>
-            I enjoy working with backend development, databases
-            and hardware.
-        </p>
 
     </div>
     </section>

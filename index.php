@@ -19,19 +19,14 @@
         </div>
     </section>
 
-     <section id="about" class="about-section">
-      <div class="about-content">
+  <section id="about" class="about-section">
+      <div class="about-stage">
           <h2 class="about-label">ABOUT ME</h2>
 
-          <p class="about-statement">
-              <span class="about-line">I CREATE EXPERIENCES</span>
-              
-          </p>
-
+          <p class="about-statement">I CREATE EXPERIENCES</p>
           <p class="about-description">
-              I'm a software developer focused on building creative
-              applications. I enjoy working with backend development,
-              databases and hardware.
+              I'm a software developer focused on creative applications,
+              backend development, databases and hardware.
           </p>
       </div>
   </section>

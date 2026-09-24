@@ -25,8 +25,7 @@
 
           <p class="about-statement">
               <span class="about-line">I CREATE EXPERIENCES</span>
-              <span class="about-line">AT THE INTERSECTION</span>
-              <span class="about-line">OF DESIGN AND CODE.</span>
+              
           </p>
 
           <p class="about-description">

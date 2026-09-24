@@ -42,26 +42,52 @@ projects.forEach((project) => {
     });
 });
 
-  gsap.registerPlugin(ScrollTrigger);
+ gsap.registerPlugin(ScrollTrigger);
 
   const aboutSection = document.querySelector(".about-section");
+  const statement = document.querySelector(".about-statement");
 
-  if (aboutSection) {
+  if (aboutSection && statement) {
+      const text = statement.textContent.trim();
+
+      // Houd de volledige zin leesbaar voor screenreaders.
+      statement.setAttribute("aria-label", text);
+      statement.replaceChildren();
+
+      // Maak losse letters, maar houd woorden bij elkaar.
+      text.split(/\s+/).forEach((word, index) => {
+          if (index > 0) {
+              statement.append(document.createTextNode(" "));
+          }
+
+          const wordSpan = document.createElement("span");
+          wordSpan.className = "about-word";
+          wordSpan.setAttribute("aria-hidden", "true");
+
+          Array.from(word).forEach((letter) => {
+              const letterSpan = document.createElement("span");
+              letterSpan.className = "about-letter";
+              letterSpan.textContent = letter;
+              wordSpan.append(letterSpan);
+          });
+
+          statement.append(wordSpan);
+      });
+
       const media = gsap.matchMedia();
 
       media.add("(prefers-reduced-motion: no-preference)", () => {
-          const lines = aboutSection.querySelectorAll(".about-line");
-
-          gsap.from(lines, {
-              x: () => -aboutSection.clientWidth,
+          gsap.from(statement.querySelectorAll(".about-letter"), {
+              x: () => aboutSection.clientWidth,
               opacity: 0,
-              stagger: 0.15,
+              duration: 1,
+              stagger: 0.06,
               ease: "none",
 
               scrollTrigger: {
                   trigger: aboutSection,
                   start: "top 85%",
-                  end: "top 15%",
+                  end: "top 10%",
                   scrub: 1,
                   invalidateOnRefresh: true
               }

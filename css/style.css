@@ -208,6 +208,14 @@ overflow: hidden;
       line-height: 1.7;
       color: #aaa;
   }
+  .about-word {
+      display: inline-block;
+      white-space: nowrap;
+  }
+
+  .about-letter {
+      display: inline-block;
+  }
 .contact-section {
     min-height: calc(100vh - 80px);
 

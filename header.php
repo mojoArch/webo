@@ -17,7 +17,7 @@
 <header>
     <nav class="navbar">
         
-        <a href="/" class="logo"></a>
+        
 
         <div class="nav-links">
             <a href="/#home">Home</a>

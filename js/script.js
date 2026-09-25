@@ -156,8 +156,7 @@ contactButtons.forEach((button) => {
     });
 
 });
-
-  const cvTitle = document.querySelector(".cv-title");
+ const cvTitle = document.querySelector(".cv-title");
 
   if (cvTitle) {
       const jump = gsap.timeline({ paused: true });
@@ -174,7 +173,28 @@ contactButtons.forEach((button) => {
               ease: "bounce.out"
           });
 
-      document.addEventListener("click", () => {
-          jump.restart();
+      cvTitle.addEventListener("mouseenter", () => {
+          if (!jump.isActive()) {
+              jump.restart();
+          }
       });
+  }
+
+  const cvText = document.querySelector(".cv-column");
+
+  if (cvText) {
+      gsap.fromTo(
+          cvText,
+          {
+              x: -100,
+              opacity: 0
+          },
+          {
+              x: 0,
+              opacity: 1,
+              duration: 1.6,
+              delay: 0.3,
+              ease: "power3.out"
+          }
+      );
   }

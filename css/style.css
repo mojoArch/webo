@@ -283,4 +283,11 @@ overflow: hidden;
     justify-content: center;
     margin-right: auto;
     font-weight: 400;
+    width: 50%;
+}
+.cv-image{
+        width: 100%;
+
+    border: 2px solid white;
+    overflow: hidden;
 }

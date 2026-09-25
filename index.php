@@ -30,7 +30,7 @@
           </p>
           <div>
             <nav>
-                <a class="cv" href="/#cv">You can take a look at my CV to learn more about my experience</a>
+                <a class="cv" href="./cv.php">You can take a look at my CV to learn more about my experience</a>
             </nav>
           </div>
       </div>

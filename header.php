@@ -24,7 +24,7 @@
             <a href="/#about">About</a>
             <a href="./project.php">Projects</a>
             <a href="/#contact">Contact</a>
-            <a class="cv" href="/#cv">CV</a>
+            <a class="cv" href="./cv.php">CV</a>
         </div>
 
     </nav>

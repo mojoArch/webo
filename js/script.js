@@ -2,6 +2,7 @@
 
 const projectButton = document.querySelector(".all-projects-button");
 
+
 if (projectButton) {
     projectButton.addEventListener("mouseenter", () => {
         gsap.to(projectButton, {
@@ -155,3 +156,25 @@ contactButtons.forEach((button) => {
     });
 
 });
+
+  const cvTitle = document.querySelector(".cv-title");
+
+  if (cvTitle) {
+      const jump = gsap.timeline({ paused: true });
+
+      jump
+          .to(cvTitle, {
+              y: -50,
+              duration: 0.25,
+              ease: "power2.out"
+          })
+          .to(cvTitle, {
+              y: 0,
+              duration: 0.7,
+              ease: "bounce.out"
+          });
+
+      document.addEventListener("click", () => {
+          jump.restart();
+      });
+  }

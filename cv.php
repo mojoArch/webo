@@ -8,7 +8,12 @@
         </div>
         <div class="cv-collum">
             <h2>NAZLI EROGLU</h2>
-
+            <p>hoi, ik ben Nazli Eroglu.
+                19-year-old Software Development student at MediaCollege Amsterdam. 
+                Passionate about software engineering, databases,
+                 backend development, and hardware 
+            </p>
+        
 
         </div>
     </section>

@@ -278,3 +278,9 @@ overflow: hidden;
     color: white;
     font-weight: 700;
 }
+.cv{
+    display: flex;
+    justify-content: center;
+    margin-right: auto;
+    font-weight: 400;
+}

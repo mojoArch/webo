@@ -28,6 +28,11 @@
               I'm a software developer focused on creative applications,
               backend development, databases and hardware.
           </p>
+          <div>
+            <nav>
+                <a class="cv" href="/#cv">You can take a look at my CV to learn more about my experience</a>
+            </nav>
+          </div>
       </div>
   </section>
 

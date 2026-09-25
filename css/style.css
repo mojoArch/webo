@@ -17,26 +17,31 @@ a {
     margin: 0 5vw;
 }
 
-.navbar {
-    max-width: 1100px;
-    margin: 0 auto;
-    height: 80px;
+  .navbar {
+      width: 90%;
+      max-width: 1100px;
+      margin: 0 auto;
+      height: 80px;
 
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+      display: flex;
+      align-items: center;
 
-    border-bottom: 2px solid #ffffff;
-}
+      border-bottom: 2px solid white;
+  }
 
+  .nav-links {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      width: 100%;
+      gap: 0;
+      padding: 0 20px;
+  }
 .logo {
     font-size: 20px;
     font-weight: bold;
-}
-
-.nav-links {
-    display: flex;
-    gap: 40px;
+    
 }
 
 .nav-links a {
@@ -339,5 +344,85 @@ overflow: hidden;
 
       .cv-title {
           margin-bottom: 40px;
+      }
+  }
+
+  .cv-skills {
+      margin-top: 80px;
+  }
+
+  .cv-skills h2,
+  .cv-education h2 {
+      font-size: clamp(1.5rem, 3vw, 2rem);
+      margin-bottom: 24px;
+  }
+
+  .cv-skills table {
+      width: 100%;
+      border-collapse: collapse;
+      text-align: left;
+  }
+
+  .cv-skills th,
+  .cv-skills td {
+      border: 1px solid white;
+      padding: 20px;
+      line-height: 1.6;
+      vertical-align: top;
+  }
+
+  .cv-skills thead {
+      background: #fff;
+      color: #000;
+  }
+
+  .cv-skills tbody th {
+      width: 35%;
+  }
+
+  .cv-skills td {
+      font-weight: 400;
+  }
+
+  .cv-github {
+      margin-top: 32px;
+  }
+
+  .cv-github a {
+      display: inline-block;
+      border: 2px solid white;
+      padding: 16px 24px;
+
+      transition: background-color 0.3s, color 0.3s;
+  }
+
+  .cv-github a:hover,
+  .cv-github a:focus-visible {
+      background: white;
+      color: black;
+  }
+
+  .cv-education {
+      margin-top: 60px;
+      padding-top: 32px;
+      border-top: 2px solid white;
+  }
+
+  .cv-education h3 {
+      font-size: 1.3rem;
+      margin-bottom: 12px;
+  }
+
+  .cv-education p {
+      font-size: 1.1rem;
+      font-weight: 400;
+      color: #aaa;
+  }
+
+  @media (max-width: 600px) {
+      .cv-skills th,
+      .cv-skills td {
+          padding: 12px;
+          overflow-wrap: anywhere;
       }
   }

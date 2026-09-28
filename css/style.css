@@ -426,3 +426,79 @@ overflow: hidden;
           overflow-wrap: anywhere;
       }
   }
+
+  .cv-page {
+      background: #eee8da;
+      color: #191919;
+      min-height: 100vh;
+  }
+
+  .cv-page .cv-image,
+  .cv-page .cv-github a,
+  .cv-page .cv-education {
+      border-color: #191919;
+  }
+
+  .cv-page .cv-skills th,
+  .cv-page .cv-skills td {
+      border-color: #b8b1a5;
+  }
+
+  .cv-page .cv-skills thead {
+      background: #191919;
+      color: #eee8da;
+  }
+
+  .cv-page .cv-education p {
+      color: #555149;
+  }
+
+  .cv-page .cv-github a {
+      background: transparent;
+      color: #191919;
+  }
+
+  .cv-page .cv-github a:hover,
+  .cv-page .cv-github a:focus-visible {
+      background: #191919;
+      color: #eee8da;
+  }
+    body:has(.cv-page) header,
+  body:has(.cv-page) .navbar {
+      background: #fff;
+      color: #000;
+  }
+
+  /* Zwarte lijn onder het menu */
+  body:has(.cv-page) .navbar {
+      border-bottom: 2px solid #000;
+  }
+
+  /* Zwarte menuletters */
+  body:has(.cv-page) .nav-links a {
+      color: #000;
+  }
+
+  body:has(.cv-page) .nav-links a:hover {
+      color: #555;
+  }
+
+  /* Zwarte rand om je foto */
+  .cv-page .cv-image {
+      border: 2px solid #000;
+  }
+
+  body:has(.cv-page) .nav-links a {
+      font-weight: 800;
+  }
+
+  .cv-page p,
+  .cv-page td,
+  .cv-page th,
+  .cv-page a {
+      font-weight: 900;
+  }
+    body:has(.cv-page) header,
+  body:has(.cv-page) .navbar {
+      background: #f5f1e8;
+  }

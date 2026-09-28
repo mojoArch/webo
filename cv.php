@@ -1,6 +1,6 @@
  <?php require 'header.php'; ?>
 
-  <main>
+  <main class="cv-page">
       <section id="mijn-cv" class="cv-section">
           <h1 class="cv-title">CV</h1>
 

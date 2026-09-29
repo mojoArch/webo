@@ -135,8 +135,9 @@ projects.forEach((project) => {
           };
       });
   }
-const contactButtons = document.querySelectorAll(".contact-links a");
-
+const contactButtons = document.querySelectorAll(
+      "main:not(.home-page) .contact-links a"
+  );
 contactButtons.forEach((button) => {
 
     button.addEventListener("mouseenter", () => {
@@ -197,4 +198,36 @@ contactButtons.forEach((button) => {
               ease: "power3.out"
           }
       );
+  }
+
+  gsap.registerPlugin(ScrollTrigger);
+
+  const homePage = document.querySelector(".home-page");
+
+  if (homePage) {
+      const homeMedia = gsap.matchMedia();
+
+      homeMedia.add("(prefers-reduced-motion: no-preference)", () => {
+          const panels = homePage.querySelectorAll(
+              ".about-stage, .contact-section"
+          );
+
+          panels.forEach((panel) => {
+              gsap.fromTo(
+                  panel,
+                  { borderRadius: "36px" },
+                  {
+                      borderRadius: "0px",
+                      ease: "none",
+
+                      scrollTrigger: {
+                          trigger: panel,
+                          start: "top 90%",
+                          end: "top 15%",
+                          scrub: 1
+                      }
+                  }
+              );
+          });
+      });
   }

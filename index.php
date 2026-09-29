@@ -2,8 +2,7 @@
 <?php require 'header.php' ;?>
 
 
-<main>
-
+<main class="home-page">
     <section id="home" class="hero">
         <div class="hero-name">
             NAZLI 

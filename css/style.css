@@ -502,3 +502,60 @@ overflow: hidden;
   body:has(.cv-page) .navbar {
       background: #f5f1e8;
   }
+  .home-page {
+      background: #000;
+      color: #fff;
+  }
+
+  /* Zwarte onderdelen */
+  .home-page .hero,
+  .home-page .projects-section {
+      background: #000;
+      color: #fff;
+  }
+
+  /* Zwart achter de afgeronde About-sectie */
+  .home-page .about-section {
+      background: #000;
+  }
+
+  /* Witte vlakken */
+  .home-page .about-stage,
+  .home-page .contact-section {
+      background: #fff;
+      color: #000;
+      border-radius: 36px;
+  }
+
+  .home-page .about-statement {
+      color: #000;
+  }
+
+  .home-page .about-label,
+  .home-page .about-description {
+      color: #444;
+  }
+
+  /* Randen passen bij de tekstkleur */
+  .home-page .project-image,
+  .home-page .all-projects-button,
+  .home-page .contact-box {
+      border-color: currentColor;
+  }
+
+  /* Contactknoppen op de witte achtergrond */
+  .home-page .contact-links a {
+      background: transparent;
+      color: #000;
+      border-color: #000;
+
+      transition:
+          background-color 0.3s,
+          color 0.3s;
+  }
+
+  .home-page .contact-links a:hover,
+  .home-page .contact-links a:focus-visible {
+      background: #000;
+      color: #fff;
+  }

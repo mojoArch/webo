@@ -469,12 +469,12 @@ overflow: hidden;
       color: #000;
   }
 
-  /* Zwarte lijn onder het menu */
+  
   body:has(.cv-page) .navbar {
       border-bottom: 2px solid #000;
   }
 
-  /* Zwarte menuletters */
+  
   body:has(.cv-page) .nav-links a {
       color: #000;
   }
@@ -483,7 +483,7 @@ overflow: hidden;
       color: #555;
   }
 
-  /* Zwarte rand om je foto */
+  
   .cv-page .cv-image {
       border: 2px solid #000;
   }
@@ -507,19 +507,19 @@ overflow: hidden;
       color: #fff;
   }
 
-  /* Zwarte onderdelen */
+  
   .home-page .hero,
   .home-page .projects-section {
       background: #000;
       color: #fff;
   }
 
-  /* Zwart achter de afgeronde About-sectie */
+
   .home-page .about-section {
       background: #000;
   }
 
-  /* Witte vlakken */
+
   .home-page .about-stage,
   .home-page .contact-section {
       background: #fff;
@@ -536,14 +536,14 @@ overflow: hidden;
       color: #444;
   }
 
-  /* Randen passen bij de tekstkleur */
+
   .home-page .project-image,
   .home-page .all-projects-button,
   .home-page .contact-box {
       border-color: currentColor;
   }
 
-  /* Contactknoppen op de witte achtergrond */
+
   .home-page .contact-links a {
       background: transparent;
       color: #000;
@@ -558,4 +558,82 @@ overflow: hidden;
   .home-page .contact-links a:focus-visible {
       background: #000;
       color: #fff;
+  }
+   body:has(.home-page) header {
+      background: #000;
+      padding: 24px 20px;
+  }
+
+
+  body:has(.home-page) .navbar {
+      width: 100%;
+      max-width: 720px;
+      min-height: 64px;
+      height: auto;
+      margin: 0 auto;
+      padding: 12px 24px;
+
+      background: #fff;
+      color: #000;
+      border: none;
+      border-radius: 999px;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  }
+
+
+  body:has(.home-page) .nav-links {
+      width: 100%;
+      padding: 0;
+
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      flex-wrap: wrap;
+      gap: 8px 16px;
+  }
+
+  body:has(.home-page) .nav-links a {
+      color: #000;
+      font-size: 16px;
+      font-weight: 700;
+      padding: 8px 4px;
+  }
+
+  body:has(.home-page) .nav-links a:hover {
+      color: #666;
+  }
+
+  @media (max-width: 600px) {
+      body:has(.home-page) .navbar {
+          padding: 10px 16px;
+          border-radius: 28px;
+      }
+
+      body:has(.home-page) .nav-links {
+          gap: 4px 12px;
+      }
+
+      body:has(.home-page) .nav-links a {
+          font-size: 14px;
+      }
+  }
+
+  body:has(.home-page) .nav-links {
+      display: flex;
+      flex-wrap: nowrap;
+      justify-content: space-between;
+      gap: clamp(6px, 2vw, 24px);
+  }
+
+  body:has(.home-page) .nav-links a {
+      flex: 0 0 auto;
+      width: auto;
+      min-width: 0;
+      margin: 0;
+      padding: 8px 0;
+      white-space: nowrap;
+      font-size: clamp(12px, 2vw, 16px);
   }

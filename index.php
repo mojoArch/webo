@@ -22,7 +22,7 @@
       <div class="about-stage">
           <h2 class="about-label">ABOUT ME</h2>
 
-          <p class="about-statement">I CREATE EXPERIENCES</p>
+          <p class="about-statement">Creative thinking | Practical solutions</p>
           <p class="about-description">
               I'm a software developer focused on creative applications,
               backend development, databases and hardware.

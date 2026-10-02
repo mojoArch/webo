@@ -63,15 +63,41 @@
           CHECK MY GITHUB ↗
       </a>
   </div>
+<section>
+    <div class="cv-education">
+        <h2>EDUCATION</h2>
 
-  <div class="cv-education">
-      <h2>EDUCATION</h2>
+        <h3>Software Dev</h3>
+        <p>Mediacollege Amsterdam</p>
+        <p>2024 - 2028 </p>
 
-      <h3>Software Developer</h3>
-      <p>Mediacollege Amsterdam</p>
-      <p>2024 - 2028</p>
-  </div>
-      </section>
+        <h4 class="cv-learning-title">CURRENTLY LEARNING</h4>
+
+        <ul class="cv-learning">
+            <li>PHP</li>
+            <li>JavaScript</li>
+            <li>SQL</li>
+            <li>Docker</li>
+            <li>Linux</li>
+            <li>Laravel</li>
+        </ul>
+    </div>
+
+    <div class="cv-language">
+        <div class="cv-language-heading">
+            <h2>LANGUAGES</h2>
+
+            <div class="cv-flags">
+                <span role="img" aria-label="Nederlands">🇳🇱</span>
+                <span role="img" aria-label="Engels">🇬🇧</span>
+            </div>
+        </div>
+
+        <p>Dutch, English</p>
+    </div>
+</section>
+
+        </section>
   </main>
 
   <?php require 'footer.php'; ?>

@@ -13,7 +13,7 @@ body {
 
 a {
     color: inherit;
-    text-decoration: none;
+    text-decoration: underline;
     margin: 0 5vw;
 }
 
@@ -412,7 +412,29 @@ overflow: hidden;
       margin-bottom: 12px;
   }
 
-  .cv-education p {
+  .cv-language p {
+      font-size: 1.1rem;
+      font-weight: 400;
+      color: #aaa;
+  }
+
+    .cv-skills h2,
+  .cv-language h2 {
+      font-size: clamp(1.5rem, 3vw, 2rem);
+      margin-bottom: 24px;
+  }
+   .cv-language {
+      margin-top: 60px;
+      padding-top: 32px;
+      border-top: 2px solid white;
+  }
+
+  .cv-language h3 {
+      font-size: 1.3rem;
+      margin-bottom: 12px;
+  }
+
+  .cv-language p {
       font-size: 1.1rem;
       font-weight: 400;
       color: #aaa;
@@ -1038,4 +1060,51 @@ overflow: hidden;
       .nav-links a {
           font-size: 12px;
       }
+      
   }
+
+  .cv-learning-title {
+    margin-top: 28px;
+    margin-bottom: 16px;
+    font-size: 1rem;
+}
+
+.cv-learning {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    padding: 0;
+    list-style: none;
+}
+
+.cv-learning li {
+    padding: 10px 18px;
+    border: 1px solid currentColor;
+    border-radius: 999px;
+    font-weight: 700;
+}
+
+.cv-language {
+    margin-top: 48px;
+}
+
+.cv-language-heading {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin-bottom: 16px;
+}
+
+.cv-language-heading h2 {
+    margin: 0;
+    font-size: clamp(1.5rem, 3vw, 2rem);
+}
+
+.cv-flags {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 2rem;
+    line-height: 1;
+}

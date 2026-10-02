@@ -40,7 +40,7 @@
           <tbody>
               <tr>
                   <th scope="row">Web</th>
-                  <td>PHP, JavaScript, MySQL, Docker, Linux, Laravel</td>
+                  <td>PHP, JavaScript, MySQL, Docker, Linux, Laravel, </td>
               </tr>
 
               <tr>
@@ -71,16 +71,38 @@
         <p>Mediacollege Amsterdam</p>
         <p>2024 - 2028 </p>
 
-        <h4 class="cv-learning-title">CURRENTLY LEARNING</h4>
+         
 
-        <ul class="cv-learning">
-            <li>PHP</li>
-            <li>JavaScript</li>
-            <li>SQL</li>
-            <li>Docker</li>
-            <li>Linux</li>
-            <li>Laravel</li>
-        </ul>
+        <div class="cv-education-right">
+        <div class="cv-learning">
+            <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/php/php-original.svg"
+                alt="PHP"
+                title="PHP"
+            >
+            <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/javascript/javascript-original.svg"
+                alt="JavaScript"
+                title="JavaScript"
+            >
+            <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/mysql/mysql-original.svg"
+                alt="MySQL"
+                title="MySQL"
+            >
+            <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/python/python-original.svg"
+                alt="Python"
+                title="Python"
+            >
+            <img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/1/18/ISO_C%2B%2B_Logo.svg/960px-ISO_C%2B%2B_Logo.svg.png?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=thumbnail" 
+            alt="C++"
+            title="C++"
+            >
+           
+        </div>
+    </div>
+</div>
     </div>
 
     <div class="cv-language">
@@ -95,6 +117,7 @@
 
         <p>Dutch, English</p>
     </div>
+</div>
 </section>
 
         </section>

@@ -48,7 +48,7 @@
       <div class="project-info">
         <span>01</span>
         <h3>CYBERDECK</h3>
-        <p>HARDWARE</p>
+        <p>HARDWARE RASPBERRY PI</p>
         </div>
     </article>
 
@@ -59,7 +59,7 @@
         <div class="project-info">
         <span>02</span>
         <h3>LAWYER</h3>
-        <p>WEBSITE</p>
+        <p>PHP-WEBSITE</p>
         </div>
     </article>
 

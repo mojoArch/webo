@@ -8,11 +8,11 @@
               <div class="cv-column">
                  
 
-                  <p>hoi, ik ben Nazli Eroglu.</p>
+                  <p>hii, My name is Nazli Eroglu.</p>
 
                   <p>
 
-                Im an 19-year-old Software Development student at MediaCollege Amsterdam. 
+                Im an 19-year-old Software Dev student at MediaCollege Amsterdam. 
                   </p>
 
                   <p>
@@ -27,13 +27,13 @@
               </div>
           </div>
           <div class="cv-skills">
-      <h2>VAARDIGHEDEN</h2>
+     
 
       <table>
           <thead>
               <tr>
-                  <th scope="col">Onderdeel</th>
-                  <th scope="col">Vaardigheden</th>
+                  <th scope="col">Subject</th>
+                  <th scope="col">Skills</th>
               </tr>
           </thead>
 
@@ -60,12 +60,12 @@
           target="_blank"
           rel="noopener noreferrer"
       >
-          BEKIJK MIJN GITHUB ↗
+          CHECK MY GITHUB ↗
       </a>
   </div>
 
   <div class="cv-education">
-      <h2>OPLEIDING</h2>
+      <h2>EDUCATION</h2>
 
       <h3>Software Developer</h3>
       <p>Mediacollege Amsterdam</p>

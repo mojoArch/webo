@@ -52,14 +52,14 @@ $translations = [
         'en' => 'VIEW ALL PROJECTS',
         'nl' => 'BEKIJK ALLE PROJECTEN'
     ],
-    'photography_description' => [
-        'en' => 'A photography portfolio built with Laravel, with a clean layout that puts the photos first.',
-        'nl' => 'Een fotografieportfolio gebouwd met Laravel, met een rustige indeling waarin de foto’s centraal staan.'
-    ],
-    'lawyer_description' => [
-        'en' => 'A custom website built with PHP for a lawyer, focused on clear information and a professional look.',
-        'nl' => 'Een website op maat voor een jurist, gebouwd met PHP en gericht op duidelijke informatie en een professionele uitstraling.'
-    ],
+ 'photography_description' => [
+    'en' => 'A Laravel portfolio website I built for photographer Jamie Vis. The dark, minimal design gives the photographs room to stand out. A grid brings portraits, landscapes and everyday moments together, inviting visitors to explore his work.',
+    'nl' => 'Een portfoliowebsite die ik met Laravel heb gebouwd voor fotograaf Jamie Vis. Het donkere, minimalistische ontwerp geeft de foto’s alle ruimte. Een raster brengt portretten, landschappen en alledaagse momenten samen en nodigt bezoekers uit om zijn werk te ontdekken.'
+],
+'lawyer_description' => [
+    'en' => 'I built this website from scratch with PHP for NevaNexis, a legal adviser. The aim was to clearly present their services and make it easy for visitors to get in touch. This project gave me the chance to put what I have learned into practice for a real client.',
+    'nl' => 'Deze website heb ik helemaal zelf gebouwd met PHP voor jurist NevaNexis. Het doel was om de diensten duidelijk te presenteren en het bezoekers makkelijk te maken om contact op te nemen. Met dit project kon ik wat ik heb geleerd in de praktijk toepassen voor een echte klant.'
+],
     'contact_text' => [
         'en' => 'INTERESTED? GET IN TOUCH',
         'nl' => 'INTERESSE? NEEM CONTACT MET MIJ OP'
@@ -148,7 +148,12 @@ $translations = [
 'cv_languages' => [
     'en' => 'LANGUAGES',
     'nl' => 'Talen die ik beheers'
-]
+],
+
+'signalshark_description' => [
+    'en' => 'SignalShark is a wireless scanner I’m building with an ESP32-S3 and C++. It scans nearby Wi-Fi networks and displays their names, channels, and signal strengths, rated as strong, moderate, or weak. An interactive serial menu lets me start scans and view help from my computer. Through this project, I’m learning embedded programming, serial communication, and how to work with wireless signals.',
+    'nl' => 'SignalShark is een draadloze scanner die ik bouw met een ESP32-S3 en C++. Het apparaat scant wifi-netwerken in de omgeving en toont hun naam, kanaal en signaalsterkte, met een beoordeling van sterk, gemiddeld of zwak. Via een interactief menu op de computer kan ik scans starten en hulp bekijken. Tijdens dit project leer ik embedded programmeren, seriële communicatie en werken met draadloze signalen.'
+],
 ]
 ;
 

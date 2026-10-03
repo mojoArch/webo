@@ -17,18 +17,15 @@ require __DIR__ . '/header.php';
                           >
                       </span>
 
-                      <span class="project-name">PHOTOGRAPH</span>
+                      <span class="project-name">J.VIS PHOTOGRAPHY</span>
                       <span class="project-category">bekijk</span>
                       <span class="project-toggle"></span>
                   </summary>
 
-                  <div class="project-description">
-                      <p>
-                          Een portfoliowebsite voor een fotograaf.
-                          De fotografie staat centraal, met een rustige
-                          indeling die het werk laat spreken.
-                      </p>
-                  </div>
+<div class="project-description">
+    <p><?= t('photography_description') ?></p>
+</div>
+
               </details>
               
               <details class="project">
@@ -40,18 +37,14 @@ require __DIR__ . '/header.php';
                           >
                       </span>
 
-                      <span class="project-name">LAWYER</span>
+                      <span class="project-name">NevaNexis</span>
                       <span class="project-category">PHP - WEBSITE</span>
                       <span class="project-toggle"></span>
                   </summary>
 
-                  <div class="project-description">
-                      <p>
-                          Een website voor een advocaat, met aandacht
-                          voor een professionele uitstraling en
-                          duidelijke informatie.
-                      </p>
-                  </div>
+<div class="project-description">
+    <p><?= t('lawyer_description') ?></p>
+</div>
               </details>
 
               <details class="project">
@@ -75,6 +68,26 @@ require __DIR__ . '/header.php';
                       </p>
                   </div>
               </details>
+              <details class="project">
+    <summary>
+        <span class="project-image">
+            <img
+                src="./images/signalshark.jpg"
+                alt="SignalShark ESP32 wireless scanner"
+            >
+        </span>
+
+        <span class="project-name">SIGNALSHARK</span>
+        <span class="project-category">ESP32 — WIRELESS SCANNER</span>
+        <span class="project-details-label">
+            <?= t('project_details') ?>
+        </span>
+    </summary>
+
+    <div class="project-description">
+        <p><?= t('signalshark_description') ?></p>
+    </div>
+</details>
 
 
 

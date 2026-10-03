@@ -53,8 +53,8 @@ require __DIR__ . '/header.php';
                 </span>
 
                 <span class="project-info">
-                    <strong class="project-name">JAMIE VIS WEBSITE</strong>
-                    <span class="project-type">PHOTOGRAPHY WEBSITE</span>
+                    <strong class="project-name">J.VIS PHOTOGRAPHY</strong>
+                    <span class="project-type">LARAVEL — WEBSITE</span>
                     <span class="project-toggle">
                         <?= t('project_details') ?>
                     </span>
@@ -76,7 +76,7 @@ require __DIR__ . '/header.php';
                 </span>
 
                 <span class="project-info">
-                    <strong class="project-name">CUSTOM LAWYER WEBSITE</strong>
+                    <strong class="project-name">NevaNexis</strong>
                     <span class="project-type">PHP — WEBSITE</span>
                     <span class="project-toggle">
                         <?= t('project_details') ?>

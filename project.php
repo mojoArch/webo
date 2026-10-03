@@ -4,8 +4,10 @@ require __DIR__ . '/header.php';
 ?>
   <main class="projects-page">
       <section id="projects" class="projects-section">
-          <h1 class="projects-title">PROJECTS</h1>
-
+         
+ <div class="projects-title">
+          <h1><?= t('work') ?></h1>
+</div>
           <div class="projects-container">
 
                         <details class="project">
@@ -18,7 +20,7 @@ require __DIR__ . '/header.php';
                       </span>
 
                       <span class="project-name">J.VIS PHOTOGRAPHY</span>
-                      <span class="project-category">bekijk</span>
+                      <span class="project-category">LARAVEL — WEBSITE</span>
                       <span class="project-toggle"></span>
                   </summary>
 
@@ -77,8 +79,8 @@ require __DIR__ . '/header.php';
             >
         </span>
 
-        <span class="project-name">SIGNALSHARK</span>
-        <span class="project-category">ESP32 — WIRELESS SCANNER</span>
+        <span class="project-name">SIGNALSHARK — AIRSPACE EXPLORER</span>
+        <span class="project-category">ESP32-S3 | C++ | Arduino IDE | Wi-Fi | nRF24L01</span>
         <span class="project-details-label">
             <?= t('project_details') ?>
         </span>

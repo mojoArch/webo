@@ -66,28 +66,26 @@ require __DIR__ . '/header.php';
             </div>
         </details>
 
-        <details class="project">
-            <summary>
-                <span class="project-image">
-                    <img
-                        src="./images/justitie.jpg"
-                        alt="Custom lawyer website preview"
-                    >
-                </span>
+ <details class="project">
+    <summary>
+        <span class="project-image">
+            <img
+                src="./images/signalshark.jpg"
+                alt="SignalShark ESP32 wireless scanner"
+            >
+        </span>
 
-                <span class="project-info">
-                    <strong class="project-name">NevaNexis</strong>
-                    <span class="project-type">PHP — WEBSITE</span>
-                    <span class="project-toggle">
-                        <?= t('project_details') ?>
-                    </span>
-                </span>
-            </summary>
+        <span class="project-name">SIGNALSHARK — AIRSPACE EXPLORER</span>
+        <span class="project-category">ESP32-S3 | C++ | Arduino IDE | Wi-Fi | nRF24L01</span>
+        <span class="project-details-label">
+            <?= t('project_details') ?>
+        </span>
+    </summary>
 
-            <div class="project-description">
-                <p><?= t('lawyer_description') ?></p>
-            </div>
-        </details>
+    <div class="project-description">
+        <p><?= t('signalshark_description') ?></p>
+    </div>
+</details>
     </div>
 
     <a href="/project.php" class="all-projects-button">

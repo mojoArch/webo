@@ -24,7 +24,7 @@ require_once __DIR__ . '/language.php';
         <div class="nav-links">
             <a href="/#home"><?= t('home') ?></a>
             <a href="/#about"><?= t('about') ?></a>
-            <a href="/project.php"><?= t('projects') ?></a>
+            <a href="/project.php"><?= t('work') ?></a>
             <a href="/#contact"><?= t('contact') ?></a>
             <a href="/cv.php"><?= t('cv') ?></a>
         </div>

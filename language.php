@@ -20,9 +20,9 @@ $translations = [
         'en' => 'About',
         'nl' => 'Over mij'
     ],
-    'projects' => [
-        'en' => 'Projects',
-        'nl' => 'Projecten'
+    'work' => [
+        'en' => 'Work',
+        'nl' => 'Werk'
     ],
     'contact' => [
         'en' => 'Contact',
@@ -151,8 +151,8 @@ $translations = [
 ],
 
 'signalshark_description' => [
-    'en' => 'SignalShark is a wireless scanner I’m building with an ESP32-S3 and C++. It scans nearby Wi-Fi networks and displays their names, channels, and signal strengths, rated as strong, moderate, or weak. An interactive serial menu lets me start scans and view help from my computer. Through this project, I’m learning embedded programming, serial communication, and how to work with wireless signals.',
-    'nl' => 'SignalShark is een draadloze scanner die ik bouw met een ESP32-S3 en C++. Het apparaat scant wifi-netwerken in de omgeving en toont hun naam, kanaal en signaalsterkte, met een beoordeling van sterk, gemiddeld of zwak. Via een interactief menu op de computer kan ik scans starten en hulp bekijken. Tijdens dit project leer ik embedded programmeren, seriële communicatie en werken met draadloze signalen.'
+    'en' => 'SignalShark is an ESP32-S3 project that connects to a laptop to explore wireless signals and track aircraft and satellites. A laptop interface lets you inspect nearby Wi-Fi networks, channels, and signal strength, monitor 2.4 GHz radio activity using an nRF24L01, and view aircraft and satellite positions using internet data. The device uses the laptop’s screen and controls, with no onboard display required.',
+    'nl' => 'SignalShark is een ESP32-S3-project dat je aansluit op een laptop om draadloze signalen te onderzoeken en vliegtuigen en satellieten te volgen. Via een interface op de laptop kun je wifi-netwerken, kanalen en signaalsterkte bekijken, radioactiviteit op 2,4 GHz meten met een nRF24L01 en vliegtuig- en satellietposities bekijken op basis van internetgegevens. Het apparaat gebruikt het scherm en de bediening van de laptop en heeft geen eigen display nodig.'
 ],
 ]
 ;

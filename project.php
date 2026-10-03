@@ -16,7 +16,7 @@
                       </span>
 
                       <span class="project-name">PHOTOGRAPH</span>
-                      <span class="project-category">LARAVEL - WEBSITE</span>
+                      <span class="project-category">bekijk</span>
                       <span class="project-toggle"></span>
                   </summary>
 

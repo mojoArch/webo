@@ -952,11 +952,11 @@ overflow: hidden;
   }
 
   .projects-page .project-toggle::after {
-      content: "Bekijk beschrijving +";
+      content: "Project Details +";
   }
 
   .projects-page .project[open] .project-toggle::after {
-      content: "Sluit beschrijving −";
+      content: "Project Details −";
   }
 
   .projects-page .project-description {
@@ -1205,4 +1205,72 @@ overflow: hidden;
         grid-template-columns: minmax(0, 1fr);
         gap: 24px;
     }
+}
+
+.home-page .project {
+    min-width: 0;
+}
+
+.home-page .project summary {
+    list-style: none;
+    cursor: pointer;
+}
+
+.home-page .project summary::-webkit-details-marker {
+    display: none;
+}
+
+.home-page .project summary:focus-visible {
+    outline: 2px solid currentColor;
+    outline-offset: 6px;
+}
+
+.home-page .project summary span {
+    display: block;
+    margin: 0;
+}
+
+.home-page .project .project-info {
+    padding-top: 20px;
+}
+
+.home-page .project-name {
+    display: block;
+    font-size: clamp(1.3rem, 2.5vw, 2rem);
+}
+
+.home-page .project .project-type {
+    margin-top: 10px;
+    font-size: 1rem;
+}
+
+.home-page .project .project-toggle {
+    margin-top: 18px;
+    font-size: 0.9rem;
+}
+
+.home-page .project-toggle::after {
+    content: " +";
+}
+
+.home-page .project[open] .project-toggle::after {
+    content: " −";
+}
+
+.home-page .project-description {
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid currentColor;
+    border-radius: 16px;
+    text-align: left;
+}
+
+.home-page .project-description p {
+    margin: 0;
+    font-weight: 400;
+    line-height: 1.7;
+}
+
+.home-page .all-projects-button {
+    margin-top: 40px;
 }

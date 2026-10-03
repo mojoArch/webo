@@ -33,14 +33,14 @@
           <thead>
               <tr>
                   <th scope="col">Subject</th>
-                  <th scope="col">Skills</th>
+                  <th scope="col">Skills - Basic Knowledge</th>
               </tr>
           </thead>
 
           <tbody>
               <tr>
                   <th scope="row">Web</th>
-                  <td>PHP, JavaScript, MySQL, Docker, Linux, Laravel, </td>
+                  <td>PHP | JavaScript | MySQL | Docker | Linux | Laravel, </td>
               </tr>
 
               <tr>
@@ -110,6 +110,17 @@
                         alt="Docker"
                         title="Docker"
                     >
+                    <img
+    src="https://cdn.simpleicons.org/kicad/314CB0"
+    alt="KiCad"
+    title="KiCad"
+>
+<img
+    src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/laravel/laravel-original.svg"
+    alt="Laravel"
+    title="Laravel"
+>
+
                 </div>
             </div>
         </div>

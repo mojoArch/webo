@@ -1,7 +1,8 @@
-<?php 
-if session_status() === PHP_SESSION_NONE) {
+<?php
+if (session_status() === PHP_SESSION_NONE) {
     session_start();
 }
+
 $selectedLanguage = $_GET['lang'] ?? null;
 
 if (in_array($selectedLanguage, ['en', 'nl'], true)) {
@@ -57,11 +58,11 @@ $translations = [
     ],
     'lawyer_description' => [
         'en' => 'A custom website built with PHP for a lawyer, focused on clear information and a professional look.',
-        'nl' => 'Een website op maat voor een advocaat, gebouwd met PHP en gericht op duidelijke informatie en een professionele uitstraling.'
+        'nl' => 'Een website op maat voor een jurist, gebouwd met PHP en gericht op duidelijke informatie en een professionele uitstraling.'
     ],
     'contact_text' => [
         'en' => 'INTERESTED? GET IN TOUCH',
-        'nl' => 'INTERESSE? NEEM CONTACT OP'
+        'nl' => 'INTERESSE? NEEM CONTACT MET MIJ OP'
     ],
     'education' => [
         'en' => 'EDUCATION',
@@ -79,6 +80,64 @@ $translations = [
         'en' => 'Dutch, English',
         'nl' => 'Nederlands, Engels'
     ]
+    ,
+'about_description' => [
+    'en' => "I'm a software developer focused on creative applications, backend development, databases and hardware.",
+    'nl' => 'Ik ben een softwareontwikkelaar met interesse in creatieve applicaties, backendontwikkeling, databases en hardware.'
+],
+'about_cv_text' => [
+    'en' => 'You can take a look at my CV to learn more about my experience.',
+    'nl' => 'Bekijk mijn cv om meer te weten te komen over mij'
+],
+'cv_intro' => [
+    'en' => "Hi, my name is Nazli Eroglu.",
+    'nl' => 'Hoi, mijn naam is Nazli Eroglu.'
+],
+'cv_student' => [
+    'en' => "I'm a 19-year-old Software Development student at Mediacollege Amsterdam.",
+    'nl' => 'Ik ben 19 jaar en studeer Software Development aan het Mediacollege Amsterdam.'
+],
+'cv_interests' => [
+    'en' => 'I enjoy working with software engineering, databases, backend development and hardware.',
+    'nl' => 'Ik werk graag met softwareontwikkeling, databases, backendontwikkeling en hardware.'
+],
+'cv_subject' => [
+    'en' => 'Subject',
+    'nl' => 'Onderdeel'
+],
+'cv_skills_basic' => [
+    'en' => 'Skills — Basic Knowledge',
+    'nl' => 'Vaardigheden — Basiskennis'
+],
+'cv_web_tools' => [
+    'en' => 'Web & Tools',
+    'nl' => 'Web & Tools'
+],
+'cv_interactive_systems' => [
+    'en' => 'Interactive Systems Design',
+    'nl' => 'Ontwerp van interactieve systemen'
+],
+'cv_electronics' => [
+    'en' => 'Electronics Prototyping',
+    'nl' => 'Elektronica Prototyping'
+],
+'cv_data_network' => [
+    'en' => 'Data & Network Software',
+    'nl' => 'Data & Netwerk Software'
+],
+'cv_github' => [
+    'en' => 'CHECK MY GITHUB',
+    'nl' => 'BEKIJK MIJN GITHUB'
+],
+'cv_photo_alt' => [
+    'en' => 'Portrait of Nazli Eroglu',
+    'nl' => 'Portret van Nazli Eroglu'
+],
+'cv_course' => [
+    'en' => 'Software Developer',
+    'nl' => 'Softwareontwikkelaar'
+]
+,
 ];
 
 function t(string $key): string

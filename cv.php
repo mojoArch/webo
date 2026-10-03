@@ -1,4 +1,4 @@
- <?php require 'header.php'; ?>
+<?php require __DIR__ . '/header.php'; ?>
 
   <main class="cv-page">
       <section id="mijn-cv" class="cv-section">
@@ -8,18 +8,9 @@
               <div class="cv-column">
                  
 
-                  <p>hii, My name is Nazli Eroglu.</p>
-
-                  <p>
-
-                Im an 19-year-old Software Dev student at MediaCollege Amsterdam. 
-                  </p>
-
-                  <p>
-
-                Passionate about software engineering, databases,
-                 backend development, and hardware 
-                  </p>
+<p><?= t('cv_intro') ?></p>
+<p><?= t('cv_student') ?></p>
+<p><?= t('cv_interests') ?></p>
               </div>
 
               <div class="cv-image">

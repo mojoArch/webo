@@ -1,6 +1,7 @@
-
-<?php require 'header.php' ;?>
-
+<?php
+require_once __DIR__ . '/language.php';
+require __DIR__ . '/header.php';
+?>
 
 <main class="home-page">
     <section id="home" class="hero">
@@ -20,24 +21,26 @@
 
   <section id="about" class="about-section">
       <div class="about-stage">
-          <h2 class="about-label">ABOUT ME</h2>
+          <h2 class="about-label"><?= t('about_title') ?></h2>
 
-          <p class="about-statement">Creative thinking | Practical solutions</p>
-          <p class="about-description">
-              I'm a software developer focused on creative applications,
-              backend development, databases and hardware.
-          </p>
+<p class="about-statement"><?= t('about_statement') ?></p>
+
+<p class="about-description">
+    <?= t('about_description') ?>
+</p>
           <div>
-            <nav>
-                <a class="cv" href="./cv.php">You can take a look at my CV to learn more about my experience</a>
-            </nav>
+<nav>
+    <a class="cv" href="./cv.php">
+        <?= t('about_cv_text') ?>
+    </a>
+</nav>
           </div>
       </div>
   </section>
 
 
 <section id="projects" class="projects-section">
-    <h2 class="projects-title">PROJECTS</h2>
+    <h2 class="projects-title"><?= t('projects_title') ?></h2>
 
     <div class="projects-container">
         <details class="project">
@@ -50,17 +53,16 @@
                 </span>
 
                 <span class="project-info">
-                    <strong class="project-name">PHOTOGRAPHY WEBSITE</strong>
-                    <span class="project-type">LARAVEL — WEBSITE</span>
-                    <span class="project-toggle">Project details</span>
+                    <strong class="project-name">JAMIE VIS WEBSITE</strong>
+                    <span class="project-type">PHOTOGRAPHY WEBSITE</span>
+                    <span class="project-toggle">
+                        <?= t('project_details') ?>
+                    </span>
                 </span>
             </summary>
 
             <div class="project-description">
-                <p>
-                    A photography portfolio built with Laravel,
-                    with a clean layout that puts the photos first.
-                </p>
+                <p><?= t('photography_description') ?></p>
             </div>
         </details>
 
@@ -76,21 +78,20 @@
                 <span class="project-info">
                     <strong class="project-name">CUSTOM LAWYER WEBSITE</strong>
                     <span class="project-type">PHP — WEBSITE</span>
-                    <span class="project-toggle">Project details</span>
+                    <span class="project-toggle">
+                        <?= t('project_details') ?>
+                    </span>
                 </span>
             </summary>
 
             <div class="project-description">
-                <p>
-                    A custom website built with PHP for a lawyer,
-                    focused on clear information and a professional look.
-                </p>
+                <p><?= t('lawyer_description') ?></p>
             </div>
         </details>
     </div>
 
     <a href="/project.php" class="all-projects-button">
-        VIEW ALL PROJECTS
+        <?= t('all_projects') ?>
     </a>
 </section>
 

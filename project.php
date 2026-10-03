@@ -1,5 +1,7 @@
-<?php require 'header.php'; ?>
-
+<?php
+require_once __DIR__ . '/language.php';
+require __DIR__ . '/header.php';
+?>
   <main class="projects-page">
       <section id="projects" class="projects-section">
           <h1 class="projects-title">PROJECTS</h1>

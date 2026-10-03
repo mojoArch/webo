@@ -1274,3 +1274,129 @@ overflow: hidden;
 .home-page .all-projects-button {
     margin-top: 40px;
 }
+header {
+    display: grid;
+    grid-template-columns:
+        minmax(110px, 1fr)
+        minmax(0, 720px)
+        minmax(110px, 1fr);
+    align-items: center;
+    gap: 16px;
+}
+
+header .navbar {
+    grid-column: 2;
+}
+
+.language-switch {
+    grid-column: 3;
+    justify-self: end;
+
+    display: flex;
+    gap: 4px;
+    padding: 4px;
+
+    background: #fff;
+    border: 1px solid #000;
+    border-radius: 999px;
+}
+
+.language-switch a {
+    display: block;
+    padding: 10px 12px;
+    border-radius: 999px;
+
+    color: #000;
+    font-size: 13px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.language-switch a[aria-current="true"] {
+    background: #000;
+    color: #fff;
+}
+
+.language-switch a:focus-visible {
+    outline: 2px solid #000;
+    outline-offset: 2px;
+}
+
+@media (max-width: 1000px) {
+    header {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 12px;
+    }
+
+    header .navbar {
+        grid-column: 1;
+    }
+
+    .language-switch {
+        grid-column: 1;
+        justify-self: end;
+    }
+}
+.site-header {
+    display: grid;
+    grid-template-columns:
+        minmax(110px, 1fr)
+        minmax(0, 720px)
+        minmax(110px, 1fr);
+    align-items: center;
+    gap: 16px;
+    padding: 24px 16px;
+}
+
+.site-header > .navbar {
+    grid-column: 2;
+    grid-row: 1;
+    position: static;
+    transform: none;
+    width: 100%;
+    min-width: 0;
+    max-width: 720px;
+    margin: 0 auto;
+}
+
+.site-header > .language-switch {
+    grid-column: 3;
+    grid-row: 1;
+    justify-self: end;
+
+    position: static;
+    transform: none;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+
+    width: max-content;
+    min-width: 0;
+    margin: 0;
+    padding: 4px;
+}
+
+.site-header > .language-switch a {
+    flex: 0 0 auto;
+    width: auto;
+    margin: 0;
+    padding: 10px 12px;
+}
+
+@media (max-width: 1050px) {
+    .site-header {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 12px;
+        padding: 16px 12px;
+    }
+
+    .site-header > .navbar {
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    .site-header > .language-switch {
+        grid-column: 1;
+        grid-row: 2;
+    }
+}

@@ -14,35 +14,40 @@
               </div>
 
               <div class="cv-image">
-                  <img src="./images/me.jpg" alt="Portret van Nazli Eroglu">
+                  <img src="./images/me.jpg" alt="<?= t('cv_photo_alt') ?>">
               </div>
           </div>
           <div class="cv-skills">
      
 
-      <table>
-          <thead>
-              <tr>
-                  <th scope="col">Subject</th>
-                  <th scope="col">Skills - Basic Knowledge</th>
-              </tr>
-          </thead>
 
-          <tbody>
-              <tr>
-                  <th scope="row">Web</th>
-                  <td>PHP | JavaScript | MySQL | Docker | Linux | Laravel, | HTML | CSS </td>
-              </tr>
+<table>
+    <thead>
+        <tr>
+            <th scope="col"><?= t('cv_subject') ?></th>
+            <th scope="col"><?= t('cv_skills_basic') ?></th>
+        </tr>
+    </thead>
 
-              <tr>
-                  <th scope="row">Interactive Systems Design</th>
-                  <td>
-                      Elektronica Prototyping<br>
-                      Data &amp; Netwerk Software
-                  </td>
-              </tr>
-          </tbody>
-      </table>
+    <tbody>
+        <tr>
+            <th scope="row"><?= t('cv_web_tools') ?></th>
+            <td>
+                PHP | JavaScript | MySQL | Docker | Linux |
+                Laravel | HTML | CSS
+            </td>
+        </tr>
+
+        <tr>
+            <th scope="row"><?= t('cv_interactive_systems') ?></th>
+            <td>
+                <?= t('cv_electronics') ?><br>
+                <?= t('cv_data_network') ?>
+            </td>
+        </tr>
+    </tbody>
+</table>
+
   </div>
 
   <div class="cv-github">
@@ -51,14 +56,15 @@
           target="_blank"
           rel="noopener noreferrer"
       >
-          CHECK MY GITHUB ↗
+          <?= t('cv_github') ?> ↗
+
       </a>
   </div>
 
 
 <section>
     <div class="cv-education">
-        <h2>EDUCATION</h2>
+        <h2><?= t('cv_education') ?></h2>
 
         <div class="cv-education-content">
             <div class="cv-education-info">

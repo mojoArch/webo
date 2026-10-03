@@ -154,6 +154,19 @@ $translations = [
     'en' => 'SignalShark is an ESP32-S3 project that connects to a laptop to explore wireless signals and track aircraft and satellites. A laptop interface lets you inspect nearby Wi-Fi networks, channels, and signal strength, monitor 2.4 GHz radio activity using an nRF24L01, and view aircraft and satellite positions using internet data. The device uses the laptop’s screen and controls, with no onboard display required.',
     'nl' => 'SignalShark is een ESP32-S3-project dat je aansluit op een laptop om draadloze signalen te onderzoeken en vliegtuigen en satellieten te volgen. Via een interface op de laptop kun je wifi-netwerken, kanalen en signaalsterkte bekijken, radioactiviteit op 2,4 GHz meten met een nRF24L01 en vliegtuig- en satellietposities bekijken op basis van internetgegevens. Het apparaat gebruikt het scherm en de bediening van de laptop en heeft geen eigen display nodig.'
 ],
+
+'contact_heading' => [
+    'en' => 'Let’s talk.',
+    'nl' => 'Laten we praten.'
+],
+'contact_intro' => [
+    'en' => 'Have a question about my work, an idea to share or just want to say hello? Feel free to send me a message.',
+    'nl' => 'Heb je een vraag over mijn werk, een idee om te delen of wil je gewoon kennismaken? Stuur me gerust een bericht.'
+],
+'contact_profile' => [
+    'en' => 'Visit my profile',
+    'nl' => 'Bekijk mijn profiel'
+],
 ]
 ;
 

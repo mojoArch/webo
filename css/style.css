@@ -1415,3 +1415,17 @@ header .navbar {
     height: 52px;
     object-fit: contain;
 }
+.projects-page .project .project-details-label {
+    margin-top: 20px;
+    font-size: 0.9rem;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+}
+
+.projects-page .project-details-label::after {
+    content: " +";
+}
+
+.projects-page .project[open] .project-details-label::after {
+    content: " −";
+}

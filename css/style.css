@@ -1429,3 +1429,141 @@ header .navbar {
 .projects-page .project[open] .project-details-label::after {
     content: " −";
 }
+.home-page .contact-redesign {
+    min-height: auto;
+    padding: clamp(48px, 8vw, 100px) 20px;
+    background: #fff;
+    color: #111;
+}
+
+.contact-redesign .contact-panel {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    align-items: center;
+    gap: 48px;
+
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: clamp(24px, 5vw, 64px);
+
+    background: #fff;
+    border: 1px solid #d8d8d8;
+    border-radius: 32px;
+    text-align: left;
+}
+
+.contact-redesign .contact-eyebrow {
+    margin-bottom: 20px;
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: #666;
+}
+
+.contact-redesign h2 {
+    margin-bottom: 24px;
+    font-size: clamp(2.5rem, 5vw, 4.5rem);
+    font-weight: 700;
+    line-height: 1.05;
+    letter-spacing: -0.05em;
+}
+
+.contact-redesign .contact-description {
+    max-width: 380px;
+    font-size: 1.05rem;
+    font-weight: 400;
+    line-height: 1.7;
+    color: #555;
+}
+
+.contact-redesign .contact-actions {
+    display: grid;
+    gap: 16px;
+    min-width: 0;
+}
+
+.contact-redesign .contact-card {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    align-items: center;
+    gap: 16px;
+    padding: 24px;
+
+    background: #f5f5f3;
+    color: #111;
+    border: 1px solid #e4e4e0;
+    border-radius: 20px;
+
+    transition:
+        background-color 0.25s,
+        color 0.25s,
+        border-color 0.25s,
+        transform 0.25s;
+}
+
+.contact-redesign .contact-card-label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+}
+
+.contact-redesign .contact-card strong {
+    display: block;
+    font-size: clamp(0.95rem, 1.5vw, 1.1rem);
+    line-height: 1.5;
+    overflow-wrap: anywhere;
+}
+
+.contact-redesign .contact-arrow {
+    font-size: 1.8rem;
+    line-height: 1;
+}
+
+.contact-redesign .contact-card:hover {
+    background: #111;
+    color: #fff;
+    border-color: #111;
+    transform: translateY(-3px);
+}
+
+.contact-redesign .contact-card:focus-visible {
+    outline: 2px solid #111;
+    outline-offset: 4px;
+}
+
+@media (max-width: 800px) {
+    .contact-redesign .contact-panel {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 32px;
+    }
+
+    .contact-redesign .contact-description {
+        max-width: none;
+    }
+}
+
+@media (max-width: 480px) {
+    .home-page .contact-redesign {
+        padding: 48px 16px;
+    }
+
+    .contact-redesign .contact-panel {
+        padding: 28px 20px;
+        border-radius: 24px;
+    }
+
+    .contact-redesign .contact-card {
+        padding: 20px 16px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .contact-redesign .contact-card {
+        transition: none;
+        transform: none;
+    }
+}

@@ -74,7 +74,7 @@ $translations = [
     ],
     'languages' => [
         'en' => 'LANGUAGES',
-        'nl' => 'TALEN'
+        'nl' => 'TALEN DIE IK BEHEERS'
     ],
     'spoken_languages' => [
         'en' => 'Dutch, English',
@@ -90,8 +90,8 @@ $translations = [
     'nl' => 'Bekijk mijn cv om meer te weten te komen over mij'
 ],
 'cv_intro' => [
-    'en' => "Hi, my name is Nazli Eroglu.",
-    'nl' => 'Hoi, mijn naam is Nazli Eroglu.'
+    'en' => "Hiiii, my name is Nazli Eroglu.",
+    'nl' => 'Hoiii, mijn naam is Nazli Eroglu.'
 ],
 'cv_student' => [
     'en' => "I'm a 19-year-old Software Development student at Mediacollege Amsterdam.",
@@ -136,9 +136,21 @@ $translations = [
 'cv_course' => [
     'en' => 'Software Developer',
     'nl' => 'Softwareontwikkelaar'
+], 
+'cv_education' => [
+    'en' => 'EDUCATION',
+    'nl' => 'OPLEIDING'
+],
+'cv_currently_learning' => [
+    'en' => 'CURRENTLY LEARNING',
+    'nl' => 'DIT BEN IK AAN HET LEREN'
+],
+'cv_languages' => [
+    'en' => 'LANGUAGES',
+    'nl' => 'Talen die ik beheers'
 ]
-,
-];
+]
+;
 
 function t(string $key): string
 {

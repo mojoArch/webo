@@ -74,9 +74,11 @@
             </div>
 
             <div class="cv-technologies">
-                <h3>CURRENTLY LEARNING</h3>
+                
+<h3><?= t('cv_currently_learning') ?></h3>
 
                 <div class="cv-learning">
+                    
                     <img
                         src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/php/php-original.svg"
                         alt="PHP"
@@ -125,7 +127,7 @@
 
     <div class="cv-language">
         <div class="cv-language-info">
-            <h2>LANGUAGES</h2>
+            <h2><?= t('cv_languages') ?></h2>
             <p>Dutch, English</p>
         </div>
 

@@ -36,40 +36,63 @@
   </section>
 
 
-    <section id="projects" class="projects-section">
-        <h2 class="projects-title">PROJECTS</h2>
-        <div class="projects-container">
+<section id="projects" class="projects-section">
+    <h2 class="projects-title">PROJECTS</h2>
 
-       
-     <article class="project">
-        <div class="project-image">
-            <img src="./images/image.jpg" alt="">
-        </div>  
-      <div class="project-info">
-        <span>01</span>
-        <h3>CYBERDECK</h3>
-        <p>HARDWARE RASPBERRY PI</p>
-        </div>
-    </article>
+    <div class="projects-container">
+        <details class="project">
+            <summary>
+                <span class="project-image">
+                    <img
+                        src="./images/fotograaf.jpg"
+                        alt="Photography website preview"
+                    >
+                </span>
 
-    <article class="project">
-         <div class="project-image">
-            <img src="./images/justitie.jpg" alt="">
-         </div>
-        <div class="project-info">
-        <span>02</span>
-        <h3>LAWYER</h3>
-        <p>PHP-WEBSITE</p>
-        </div>
-    </article>
+                <span class="project-info">
+                    <strong class="project-name">PHOTOGRAPHY WEBSITE</strong>
+                    <span class="project-type">LARAVEL — WEBSITE</span>
+                    <span class="project-toggle">Project details</span>
+                </span>
+            </summary>
 
-        <a href="/project.php" class="all-projects-button">
-            VIEW ALL PROJECTS
-        </a>
+            <div class="project-description">
+                <p>
+                    A photography portfolio built with Laravel,
+                    with a clean layout that puts the photos first.
+                </p>
+            </div>
+        </details>
 
-   </div>
-    </section>
+        <details class="project">
+            <summary>
+                <span class="project-image">
+                    <img
+                        src="./images/justitie.jpg"
+                        alt="Custom lawyer website preview"
+                    >
+                </span>
 
+                <span class="project-info">
+                    <strong class="project-name">CUSTOM LAWYER WEBSITE</strong>
+                    <span class="project-type">PHP — WEBSITE</span>
+                    <span class="project-toggle">Project details</span>
+                </span>
+            </summary>
+
+            <div class="project-description">
+                <p>
+                    A custom website built with PHP for a lawyer,
+                    focused on clear information and a professional look.
+                </p>
+            </div>
+        </details>
+    </div>
+
+    <a href="/project.php" class="all-projects-button">
+        VIEW ALL PROJECTS
+    </a>
+</section>
 
 
     </div>

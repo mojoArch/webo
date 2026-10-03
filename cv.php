@@ -40,7 +40,7 @@
           <tbody>
               <tr>
                   <th scope="row">Web</th>
-                  <td>PHP | JavaScript | MySQL | Docker | Linux | Laravel, </td>
+                  <td>PHP | JavaScript | MySQL | Docker | Linux | Laravel, | HTML | CSS </td>
               </tr>
 
               <tr>

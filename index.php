@@ -95,45 +95,29 @@ require __DIR__ . '/header.php';
 
 
     </div>
-<section id="contact" class="contact-section contact-redesign">
-    <div class="contact-panel">
-        <div class="contact-intro">
-            <p class="contact-eyebrow"><?= t('contact') ?></p>
+<section id="contact" class="contact-section contact-simple">
+    <div class="contact-simple-inner">
+        <h2><?= t('contact') ?></h2>
 
-            <h2><?= t('contact_heading') ?></h2>
+        <p><?= t('contact_simple_text') ?></p>
 
-            <p class="contact-description">
-                <?= t('contact_intro') ?>
-            </p>
-        </div>
-
-        <div class="contact-actions">
-            <a
-                class="contact-card"
-                href="mailto:n.eroglux014@gmail.com"
-            >
-                <span class="contact-card-content">
-                    <span class="contact-card-label">EMAIL</span>
-                    <strong>n.eroglux014@gmail.com</strong>
-                </span>
-
-                <span class="contact-arrow" aria-hidden="true">↗</span>
+        <div class="contact-simple-links">
+            <a href="mailto:nazli.eroglux@gmail.com">
+                nazli.eroglux@gmail.com
             </a>
 
             <a
-                class="contact-card"
                 href="https://linkedin.com/in/nazli-eroglu-191baa370"
                 target="_blank"
                 rel="noopener noreferrer"
             >
-                <span class="contact-card-content">
-                    <span class="contact-card-label">LINKEDIN</span>
-                    <strong><?= t('contact_profile') ?></strong>
-                </span>
-
-                <span class="contact-arrow" aria-hidden="true">↗</span>
+                LinkedIn ↗
             </a>
         </div>
+
+        <footer class="contact-bottom">
+            © 2026 Nazli Eroglu
+        </footer>
     </div>
 </section>
 

@@ -159,14 +159,13 @@ $translations = [
     'en' => 'Let’s get in touch.',
     'nl' => 'Neem gerust contact op.'
 ],
-'contact_intro' => [
-    'en' => 'Have a question about my work or an idea you’d like to discuss? Feel free to email me or connect with me on LinkedIn.',
-    'nl' => 'Heb je een vraag over mijn werk of een idee dat je wilt bespreken? Stuur me gerust een mail of neem contact op via LinkedIn.'
-],
-
 'contact_profile' => [
     'en' => 'Visit my profile',
     'nl' => 'Bekijk mijn profiel'
+],
+'contact_simple_text' => [
+'en' => 'Have a question about my work or an idea you’d like to discuss? Feel free to email me or connect with me on LinkedIn.',
+    'nl' => 'Heb je een vraag over mijn werk of een idee dat je wilt bespreken? Stuur me gerust een mail of neem contact op via LinkedIn.'
 ],
 ]
 ;

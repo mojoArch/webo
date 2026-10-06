@@ -167,6 +167,11 @@ $translations = [
 'en' => 'Have a question about my work or an idea you’d like to discuss? Feel free to email me or connect with me on LinkedIn.',
     'nl' => 'Heb je een vraag over mijn werk of een idee dat je wilt bespreken? Stuur me gerust een mail of neem contact op via LinkedIn.'
 ],
+
+'visit_website' => [
+    'en' => 'Visit website',
+    'nl' => 'Bekijk website'
+],
 ]
 ;
 

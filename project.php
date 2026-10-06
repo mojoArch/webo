@@ -40,6 +40,18 @@ require __DIR__ . '/header.php';
                       </span>
 
                       <span class="project-name">NevaNexis</span>
+                      <div class="project-description">
+    <p><?= t('lawyer_description') ?></p>
+
+    <a
+        class="project-website"
+        href="https://www.nevanexis.nl/"
+        target="_blank"
+        rel="noopener noreferrer"
+    >
+        <?= t('visit_website') ?> ↗
+    </a>
+</div>
                       <span class="project-category">PHP - WEBSITE</span>
                       <span class="project-toggle"></span>
                   </summary>

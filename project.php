@@ -2,7 +2,7 @@
 require_once __DIR__ . '/language.php';
 require __DIR__ . '/header.php';
 ?>
-  <main class="projects-page">
+ <main class="projects-page">
       <section id="projects" class="projects-section">
          
  <div class="projects-title">
@@ -40,10 +40,7 @@ require __DIR__ . '/header.php';
                       </span>
 
                       <span class="project-name">NevaNexis</span>
-                      <div class="project-description">
-    <p><?= t('lawyer_description') ?></p>
-
-    <a
+                          <a
         class="project-website"
         href="https://www.nevanexis.nl/"
         target="_blank"
@@ -51,7 +48,6 @@ require __DIR__ . '/header.php';
     >
         <?= t('visit_website') ?> ↗
     </a>
-</div>
                       <span class="project-category">PHP - WEBSITE</span>
                       <span class="project-toggle"></span>
                   </summary>

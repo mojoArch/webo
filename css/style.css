@@ -1649,3 +1649,80 @@ header .navbar {
     outline: 2px solid currentColor;
     outline-offset: 4px;
 }
+.project-description .project-website {
+    background: rgb(43, 41, 97);
+    color: #fff;
+    border: 1px solid rgb(43, 41, 97);
+    border-radius: 8px;
+    padding: 12px 20px;
+
+    transition: background-color 0.2s;
+}
+
+.project-description .project-website:hover {
+    background: rgb(62, 59, 130);
+    text-decoration: none;
+}
+body:has(.projects-page) {
+    background: #f5f1e8;
+    color: #191919;
+}
+
+.projects-page {
+    min-height: 100vh;
+    background: #f5f1e8;
+    color: #191919;
+}
+
+.projects-page .projects-section {
+    background: #f5f1e8;
+    color: #191919;
+}
+
+body:has(.projects-page) .site-header {
+    background: #f5f1e8;
+}
+
+body:has(.projects-page) .navbar {
+    background: transparent;
+    color: #191919;
+    border: 2px solid #191919;
+}
+
+body:has(.projects-page) .nav-links a {
+    color: #191919;
+    font-weight: 700;
+}
+
+.projects-page .projects-title,
+.projects-page .project-name {
+    font-weight: 900;
+}
+
+.projects-page .project p,
+.projects-page .project span,
+.projects-page .project a {
+    font-weight: 700;
+}
+
+.projects-page .project-image,
+.projects-page .project-description {
+    border-color: #191919;
+}
+
+.projects-page .project summary:focus-visible {
+    outline-color: #191919;
+}
+body:has(.projects-page),
+.projects-page,
+.projects-page .projects-section {
+    background: #eee8da;
+}
+
+body:has(.projects-page) .site-header {
+    background: #f5f1e8;
+}
+
+body:has(.projects-page) .navbar {
+    background: #f5f1e8;
+}

@@ -1669,8 +1669,8 @@ a.project-website:focus-visible {
 }
 
 .project-description .project-website:hover {
-    background: #eac3bd;
-    border-color: #c58d85;
+    background: #bb2f1a;
+    
     text-decoration: none;
 }
 
@@ -1769,4 +1769,38 @@ body:has(.projects-page) .navbar {
 
 .project[open] .project-meta .project-toggle::after {
     content: " −";
+}
+
+.home-page .project .project-meta,
+.projects-page .project .project-meta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px 20px;
+    margin-top: 16px;
+}
+
+.project .project-meta .project-type,
+.project .project-meta .project-toggle {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+.project .project-meta .project-website {
+    margin: 0;
+    padding: 8px 14px;
+    font-size: 0.9rem;
+}
+
+.project .project-meta .project-toggle::after {
+    content: " +";
+}
+
+.project[open] .project-meta .project-toggle::after {
+    content: " −";
+}
+
+:is(.home-page, .projects-page) .project :is(strong, span, p, a, h3) {
+    font-weight: 900;
 }

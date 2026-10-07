@@ -19,9 +19,25 @@ require __DIR__ . '/header.php';
                           >
                       </span>
 
-                      <span class="project-name">J.VIS PHOTOGRAPHY</span>
-                      <span class="project-category">LARAVEL — WEBSITE</span>
-                      <span class="project-toggle"></span>
+
+<span class="project-name">J.VIS PHOTOGRAPHY</span>
+
+<span class="project-meta">
+    <span class="project-type">LARAVEL — WEBSITE</span>
+
+    <span class="project-toggle">
+        <?= t('project_details') ?>
+    </span>
+
+    <a
+        class="project-website"
+        href="JOUW-WEBSITE-URL"
+        target="_blank"
+        rel="noopener noreferrer"
+    >
+        <?= t('visit_website') ?> ↗
+    </a>
+</span>
                   </summary>
 
 <div class="project-description">

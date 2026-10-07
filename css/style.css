@@ -1634,8 +1634,8 @@ a.project-website {
     margin-top: 20px;
     padding: 12px 20px;
 
-    background-color: #f3d9d5;
-    color: #702d28;
+    background-color: #a61b06;
+    color: #ffffff;
     border: 1px solid #dca8a1;
     border-radius: 8px;
 
@@ -1669,8 +1669,8 @@ a.project-website:focus-visible {
 }
 
 .project-description .project-website:hover {
-    background: #bb2f1a;
-    
+    background: #eac3bd;
+    border-color: #c58d85;
     text-decoration: none;
 }
 

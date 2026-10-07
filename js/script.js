@@ -157,6 +157,36 @@ contactButtons.forEach((button) => {
     });
 
 });
+const workTitle = document.querySelector(".projects-page .projects-title");
+
+if (
+    workTitle &&
+    !window.matchMedia("(prefers-reduced-motion: reduce)").matches
+) {
+    const workJump = gsap.timeline({ paused: true });
+
+    workJump
+        .fromTo(
+            workTitle,
+            { y: 0 },
+            {
+                y: -35,
+                duration: 0.25,
+                ease: "power2.out"
+            }
+        )
+        .to(workTitle, {
+            y: 0,
+            duration: 0.7,
+            ease: "bounce.out"
+        });
+
+    workTitle.addEventListener("mouseenter", () => {
+        if (!workJump.isActive()) {
+            workJump.restart();
+        }
+    });
+}
  const cvTitle = document.querySelector(".cv-title");
 
   if (cvTitle) {

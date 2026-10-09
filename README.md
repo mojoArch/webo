@@ -1,6 +1,6 @@
-# Nazli — Personal Website
+mrmojodev.nl
 
-Persoonlijke website met een overzicht van mijn projecten, opleiding, vaardigheden en contactgegevens.
+portfolio website met een overzicht van mijn projecten, opleiding, vaardigheden en contactgegevens.
 
 ## Functionaliteiten
 
